@@ -114,7 +114,7 @@ def main():
                     write_list = list()
 
         if prediction is not None:
-            cv2.putText(frame, f'Prediction: {gesture[prediction]} - Probability: {str(np.round(pred_[prediction], 4)*100)[:4]}', (10, 50), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2, cv2.LINE_AA, False)
+            cv2.putText(frame, f'Prediction: {gesture[prediction]} - Probability: {str(np.round(pred_[prediction], 4)*100)[:4]}%', (10, 50), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2, cv2.LINE_AA, False)
         cv2.imshow('Cam', frame)
 
         # Closes the window
